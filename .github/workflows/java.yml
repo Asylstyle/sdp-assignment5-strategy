@@ -1,0 +1,23 @@
+name: Java 17 checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Compile and test core and extension
+        shell: bash
+        run: |
+          set -euo pipefail
+          javac --release 17 -Xlint:all -Werror -d out src/main/java/calculator/*.java src/test/java/calculator/*.java
+          java -cp out calculator.Client
+          java -cp out calculator.CalculatorTest
+          javac --release 17 -Xlint:all -Werror -cp out -d out examples/extension/*.java
+          java -cp out extension.ExtensionClient
+          java -cp out extension.ExtensionTest

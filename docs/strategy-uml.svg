@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<rect width="1800" height="1200" fill="#f4f7fb"/>
+<text x="54" y="64" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#24364b">CALCULATOR / STRATEGY PATTERN</text>
+<text x="54" y="105" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#24364b">Java 17  •  Option B  •  Core production classes</text>
+<rect x="60" y="170" width="630" height="234" rx="8" fill="white" stroke="#aebfd0" stroke-width="2"/>
+<path d="M61 226V178Q61 171 68 171H682Q689 171 689 178V226Z" fill="#dce9f6"/>
+<text x="80" y="208" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#24364b">Calculator</text>
+<polyline points="60,226 690,226" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<text x="78" y="259" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">- strategy: OperationStrategy</text>
+<polyline points="60,278 690,278" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<text x="78" y="311" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">+ Calculator(strategy: OperationStrategy)</text>
+<text x="78" y="345" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">+ setStrategy(strategy: OperationStrategy): void</text>
+<text x="78" y="379" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">+ calculate(left: double, right: double): double</text>
+<rect x="1000" y="170" width="690" height="178" rx="8" fill="white" stroke="#aebfd0" stroke-width="2"/>
+<path d="M1001 248V178Q1001 171 1008 171H1682Q1689 171 1689 178V248Z" fill="#dce9f6"/>
+<text x="1020" y="196" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#24364b">«interface»</text>
+<text x="1020" y="229" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#24364b">OperationStrategy</text>
+<polyline points="1000,248 1690,248" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<polyline points="1000,290 1690,290" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<text x="1018" y="323" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">+ execute(left: double, right: double): double</text>
+<polyline points="690,240 1000,240" fill="none" stroke="#51647c" stroke-width="2"/>
+<polyline points="986,232 1000,240 986,248" fill="none" stroke="#51647c" stroke-width="2"/>
+<text x="762" y="222" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#24364b">strategy</text>
+<text x="965" y="266" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">1</text>
+<polyline points="320,638 320,490 1345,490 1345,370" fill="none" stroke="#51647c" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="900,638 900,490 1345,490 1345,370" fill="none" stroke="#51647c" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1480,638 1480,490 1345,490 1345,370" fill="none" stroke="#51647c" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="1345,348 1333,370 1357,370" fill="white" stroke="#51647c" stroke-width="2"/>
+<text x="1140" y="467" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">implements</text>
+<rect x="60" y="638" width="520" height="190" rx="8" fill="white" stroke="#aebfd0" stroke-width="2"/>
+<path d="M61 694V646Q61 639 68 639H572Q579 639 579 646V694Z" fill="#dce9f6"/>
+<text x="80" y="676" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#24364b">AddStrategy</text>
+<polyline points="60,694 580,694" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<polyline points="60,736 580,736" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<text x="78" y="769" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">+ execute(left: double,</text>
+<text x="78" y="803" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">    right: double): double</text>
+<rect x="640" y="638" width="520" height="190" rx="8" fill="white" stroke="#aebfd0" stroke-width="2"/>
+<path d="M641 694V646Q641 639 648 639H1152Q1159 639 1159 646V694Z" fill="#dce9f6"/>
+<text x="660" y="676" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#24364b">SubtractStrategy</text>
+<polyline points="640,694 1160,694" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<polyline points="640,736 1160,736" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<text x="658" y="769" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">+ execute(left: double,</text>
+<text x="658" y="803" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">    right: double): double</text>
+<rect x="1220" y="638" width="520" height="190" rx="8" fill="white" stroke="#aebfd0" stroke-width="2"/>
+<path d="M1221 694V646Q1221 639 1228 639H1732Q1739 639 1739 646V694Z" fill="#dce9f6"/>
+<text x="1240" y="676" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#24364b">MultiplyStrategy</text>
+<polyline points="1220,694 1740,694" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<polyline points="1220,736 1740,736" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<text x="1238" y="769" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">+ execute(left: double,</text>
+<text x="1238" y="803" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">    right: double): double</text>
+<rect x="60" y="960" width="630" height="166" rx="8" fill="white" stroke="#aebfd0" stroke-width="2"/>
+<path d="M61 1016V968Q61 961 68 961H682Q689 961 689 968V1016Z" fill="#dce9f6"/>
+<text x="80" y="998" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#24364b">Client</text>
+<polyline points="60,1016 690,1016" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<text x="78" y="1049" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">- Client()</text>
+<polyline points="60,1068 690,1068" fill="none" stroke="#aebfd0" stroke-width="2"/>
+<text x="78" y="1101" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#24364b">+ main(args: String[]): void {static}</text>
+<polyline points="60,1020 28,1020 28,270 60,270" fill="none" stroke="#51647c" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="46,262 60,270 46,278" fill="none" stroke="#51647c" stroke-width="2"/>
+<text x="50" y="565" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#24364b">creates / calls Context</text>
+<polyline points="690,1032 1750,1032 1750,900 320,900" fill="none" stroke="#51647c" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="320,900 320,828" fill="none" stroke="#51647c" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="312,842 320,828 328,842" fill="none" stroke="#51647c" stroke-width="2"/>
+<polyline points="900,900 900,828" fill="none" stroke="#51647c" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="892,842 900,828 908,842" fill="none" stroke="#51647c" stroke-width="2"/>
+<polyline points="1480,900 1480,828" fill="none" stroke="#51647c" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1472,842 1480,828 1488,842" fill="none" stroke="#51647c" stroke-width="2"/>
+<text x="1180" y="1080" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#24364b">creates concrete strategies</text>
+<text x="60" y="1170" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#24364b">+ public   - private   |   dashed triangle: realization   |   dashed arrow: dependency</text>
+</svg>

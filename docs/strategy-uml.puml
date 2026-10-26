@@ -1,0 +1,36 @@
+@startuml
+title Assignment 5 — Calculator / Strategy
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+class Client {
+  - Client()
+  + {static} main(args: String[]): void
+}
+class Calculator {
+  - strategy: OperationStrategy
+  + Calculator(strategy: OperationStrategy)
+  + setStrategy(strategy: OperationStrategy): void
+  + calculate(left: double, right: double): double
+}
+interface OperationStrategy {
+  + execute(left: double, right: double): double
+}
+class AddStrategy {
+  + execute(left: double, right: double): double
+}
+class SubtractStrategy {
+  + execute(left: double, right: double): double
+}
+class MultiplyStrategy {
+  + execute(left: double, right: double): double
+}
+Client ..> Calculator : creates / calls
+Client ..> AddStrategy : creates
+Client ..> SubtractStrategy : creates
+Client ..> MultiplyStrategy : creates
+Calculator --> "1" OperationStrategy : strategy
+AddStrategy ..|> OperationStrategy
+SubtractStrategy ..|> OperationStrategy
+MultiplyStrategy ..|> OperationStrategy
+@enduml
