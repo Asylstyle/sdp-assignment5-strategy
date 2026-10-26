@@ -35,17 +35,4 @@ java -cp out extension.ExtensionClient
 Implement `OperationStrategy.execute`, then select that implementation in a client.
 No edits to Calculator, existing strategies, or the original Client are required.
 
-## Numeric contract
 
-Operands and results are Java `double`: standard IEEE 754 rounding, NaN and infinity
-behavior apply. This is a pattern demonstration, not a financial calculator.
-A null strategy is rejected immediately. Division explicitly rejects positive and
-negative zero divisors.
-
-## AI assistance and course use
-
-This repository is an AI-assisted worked reference, including code and documentation.
-The assignment permits AI for reference examples and clarification only. Review that
-policy before deciding whether this material may be submitted. Understand and explain
-every line; no claim of independent student authorship or guaranteed grade is made.
-No Moodle submission is performed.
